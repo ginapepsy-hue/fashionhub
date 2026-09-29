@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  font-style: italic;
+  background-color: rgb(202, 15, 102);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+.container {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-one {
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 98vh;
+  background-color: white;
+}
+
+.boxone-wrapper {
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-boxone {
+  /* border: 1px solid red; */
+  width: 80%;
+  height: 60vh;
+}
+
+.crossleg-img {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boxone-wrappertwo {
+  /* border: 1px solid green; */
+  width: 100%;
+  height: 38vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-boxtwo {
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 38vh;
+  position: relative;
+}
+
+.pretty {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+}
+
+.box-two {
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 98vh;
+}
+
+.boxtwo-wrapper {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 98vh;
+  background-image: url(./images/style\ girl.jpg);
+  background-size: cover;
+}
+
+.image-box {
+  border: 1px solid red;
+  width: 100%;
+  height: 98vh;
+}
+
+.high-fashion {
+  /* border: 2px solid red; */
+  width: 60%;
+  padding: 20px 20px;
+  font-size: 5rem;
+  color: rgb(253, 88, 116);
+  margin-top: 30%;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.span-fashion {
+  color: rgb(20, 242, 235);
+}
+
+.second-container {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100vh;
+  background-color: #323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-wrapper {
+  /* border: 1px solid red; */
+  width: 95%;
+  height: 95vh;
+}
+
+.textpage-one {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 30vh;
+}
+
+.journey {
+  /* border: 1px solid red; */
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.lorem {
+  /* border: 1px solid red; */
+  width: 100%;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding: 20px 80px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.textpage-two {
+  /* border: 1px solid green; */
+  width: 100%;
+  height: 55vh;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textpage-boxone {
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 55vh;
+}
+
+.contact-letter {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textpage-boxtwo {
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 55vh;
+}
+
+.hiking-man {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fashion-box {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: fit-content;
+}
+.fashion-wrapper {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 150vh;
+  background-image: url(./images/fashion\ img.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fashion-textbox {
+  /* border: 1px solid red; */
+  width: 90%;
+  height: 110vh;
+}
+
+.fashion-boxone {
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 110vh;
+}
+
+.line {
+  border: 5px solid white;
+  width: 40%;
+}
+
+.new-york {
+  /* border: 1px solid red; */
+  font-size: 5rem;
+  padding: 40px 0px;
+  color: white;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.week {
+  /* border: 1px solid red; */
+  font-size: 1.5rem;
+  font-style: italic;
+  color: white;
+}
+
+.line-two {
+  border: 5px solid white;
+  width: 60%;
+  margin-top: 50px;
+  margin-left: 40%;
+}
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .container,
+  .wrapper {
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .box-one,
+  .box-two {
+    width: 90%;
+    height: auto;
+  }
+
+  .boxone-wrapper {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .mini-boxone {
+    width: 80%;
+    height: 50vh;
+  }
+
+  .crossleg-img {
+    height: 100%;
+  }
+
+  .boxone-wrappertwo {
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .mini-boxtwo {
+    width: 80%;
+    height: 40vh;
+  }
+
+  .pretty {
+    position: relative;
+    bottom: auto;
+    right: auto;
+  }
+
+  .moneygirl {
+    height: 70vh;
+    object-fit: contain;
+  }
+
+  /* SECOND SECTION */
+
+  .second-container {
+    height: auto;
+    min-height: 100vh;
+    padding: 50px 0;
+  }
+
+  .text-wrapper {
+    width: 90%;
+    height: auto;
+  }
+
+  .textpage-one {
+    height: auto;
+  }
+
+  .lorem {
+    padding: 20px 30px;
+  }
+
+  .textpage-two {
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .textpage-boxone,
+  .textpage-boxtwo {
+    width: 100%;
+    height: 50vh;
+  }
+
+  /* FASHION SECTION */
+
+  .fashion-wrapper {
+    height: 100vh;
+  }
+
+  .fashion-textbox {
+    width: 90%;
+    height: auto;
+  }
+
+  .fashion-boxone {
+    width: 70%;
+    height: auto;
+  }
+
+  .new-york {
+    font-size: 4rem;
+  }
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+  .container,
+  .wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  /* FIRST SECTION */
+
+  .box-one,
+  .box-two {
+    width: 100%;
+    height: auto;
+  }
+
+  .boxone-wrapper {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .mini-boxone {
+    width: 90%;
+    height: 45vh;
+  }
+
+  .crossleg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .boxone-wrappertwo {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .mini-boxtwo {
+    width: 90%;
+    height: 40vh;
+  }
+
+  .pretty {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: auto;
+    right: auto;
+  }
+
+  .moneygirl {
+    width: 100%;
+    height: 60vh;
+    object-fit: contain;
+  }
+
+  /* SECOND SECTION */
+
+  .second-container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 0;
+  }
+
+  .text-wrapper {
+    width: 90%;
+    height: auto;
+  }
+
+  .textpage-one {
+    width: 100%;
+    height: auto;
+  }
+
+  .journey {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+
+  .lorem {
+    font-size: 0.95rem;
+    padding: 15px 5px;
+    line-height: 25px;
+  }
+
+  .textpage-two {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 25px;
+  }
+
+  .textpage-boxone,
+  .textpage-boxtwo {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .contact-letter,
+  .hiking-man {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* FASHION SECTION */
+
+  .fashion-wrapper {
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    background-position: center;
+  }
+
+  .fashion-textbox {
+    width: 90%;
+    height: auto;
+  }
+
+  .fashion-boxone {
+    width: 100%;
+    height: auto;
+  }
+
+  .line {
+    width: 35%;
+    border-width: 3px;
+  }
+
+  .new-york {
+    font-size: clamp(3rem, 12vw, 4rem);
+    padding: 25px 0;
+  }
+
+  .week {
+    font-size: 1.1rem;
+  }
+
+  .line-two {
+    width: 60%;
+    border-width: 3px;
+    margin-top: 30px;
+    margin-left: 40%;
+  }
+}
