@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  font-style: italic;
+  background-color: rgb(202, 15, 102);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+
+
+
+/* GENERAL RESET */
+
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #faf8f5;
+  color: #26221f;
+  line-height: 1.8;
+} */
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+/* MAIN ARTICLE */
+.article-container {
+  width: min(100% - 40px, 900px);
+  margin: 65px auto;
+}
+
+.eyebrow {
+  color: #a56f5d;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.article-container h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.article-intro {
+  font-size: 18px;
+  color: #71675f;
+  max-width: 720px;
+  margin-bottom: 32px;
+}
+
+/* FASHION IMAGES */
+.fashion-image {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.trend-image {
+  background-image: url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=85");
+}
+
+.elegance-image {
+  background-image: url("https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1400&q=85");
+}
+
+/* ARTICLE CONTENT */
+.article-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.article-content h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  line-height: 1.35;
+  margin: 35px 0 14px;
+}
+
+.article-content p {
+  color: #5d554f;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.article-content blockquote {
+  border-left: 3px solid #b47a66;
+  padding: 12px 22px;
+  margin: 30px 0;
+  background: #f1ebe5;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* BUTTONS */
+.fashion-button {
+  display: inline-block;
+  background: #29231f;
+  color: #fff;
+  padding: 13px 23px;
+  margin: 15px 12px 15px 0;
+  border: 1px solid #29231f;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+.fashion-button:hover {
+  background: #b47a66;
+  border-color: #b47a66;
+}
+
+.back-link {
+  display: inline-block;
+  color: #8f5f4f;
+  padding: 12px 0;
+}
+
+/* RESPONSIVE WRAP: TABLETS */
+@media (max-width: 768px) {
+  .article-container {
+    width: calc(100% - 32px);
+    margin: 40px auto;
+  }
+
+  .article-intro {
+    font-size: 16px;
+  }
+
+  .fashion-image {
+    aspect-ratio: 4 / 3;
+    min-height: 230px;
+    margin-bottom: 28px;
+  }
+
+  .article-content h2 {
+    font-size: 23px;
+    margin-top: 28px;
+  }
+
+  .article-content p {
+    font-size: 15px;
+  }
+}
+
+/* RESPONSIVE WRAP: MOBILE PHONES */
+@media (max-width: 480px) {
+  .article-container {
+    width: calc(100% - 28px);
+    margin: 28px auto;
+  }
+
+  .article-container h1 {
+    font-size: 33px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .fashion-image {
+    min-height: 190px;
+  }
+
+  .article-content h2 {
+    font-size: 21px;
+  }
+
+  .fashion-button {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+}
